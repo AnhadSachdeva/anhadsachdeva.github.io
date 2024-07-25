@@ -1963,6 +1963,10 @@ html {
   border-end-end-radius: 0px;
 }
 
+.static {
+  position: static;
+}
+
 .fixed {
   position: fixed;
 }
@@ -1989,6 +1993,10 @@ html {
 
 .end-1 {
   inset-inline-end: 0.25rem;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .z-\[1\] {
@@ -2692,6 +2700,11 @@ html {
   padding-bottom: 0.25rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
 }
@@ -2889,6 +2902,16 @@ html {
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
 @media (min-width: 768px) {
   .mockup-phone .md\:display {
     overflow: hidden;
@@ -2945,6 +2968,14 @@ html {
     margin-top: 0px;
   }
 
+  .md\:mr-64 {
+    margin-right: 16rem;
+  }
+
+  .md\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -2967,6 +2998,15 @@ html {
 
   .md\:justify-normal {
     justify-content: normal;
+  }
+
+  .md\:border-r-8 {
+    border-right-width: 8px;
+  }
+
+  .md\:border-red-700 {
+    --tw-border-opacity: 1;
+    border-color: rgb(185 28 28 / var(--tw-border-opacity));
   }
 
   .md\:text-2xl {

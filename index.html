@@ -8,12 +8,12 @@
   <title>My Portfolio</title>
 </head>
 
-<body class="overflow-x-hidden">
+<body id="body_top" class="overflow-x-hidden">
 
   <!-- NavBar -->
-  <div class="navbar bg-slate-700 text-white">
+  <div id="navbar" class="navbar sticky z-10 top-0 bg-slate-700 text-white w-full py-4 transition-all duration-300">
     <div class="navbar-start">
-      <a class="btn btn-ghost text-xl">Anhad Sachdeva</a>
+      <a id="home" class="btn btn-ghost text-xl">Anhad Sachdeva</a>
     </div>
     <div class="navbar-center hidden sm:flex">
       <ul class="menu menu-horizontal font-bold px-1">
@@ -131,8 +131,9 @@
     </div>
 
     <!-- Projects -->
-    <div class="bg-white font-mono text-white">
-      <h1 id="projects_layout" class="pt-10 font-bold text-gray-800 flex justify-center text-4xl lg:text-6xl pb-4">
+    <div id="projects_layout" class="bg-white pt-12 font-mono text-white">
+  
+      <h1  class="pt-10 font-bold text-gray-800 flex justify-center text-4xl lg:text-6xl pb-4">
         Projects
       </h1>
 
@@ -146,14 +147,14 @@
           </div>
           <div class="border-t-2">
             <!-- Text -->
-            <div class="m-4">
+            <div class="m-4 ">
               <h2 class="text-xl font-bold mb-2"><a class="hover:underline" target="_blank" href="https://github.com/AnhadSachdeva/VisualAlgo">VisualAlgo</a></h2>
               <p class="text-gray-200">I've been developing an interactive visualizer using Manim to dynamically animate the inner workings of algorithms and data structures. This project focuses on creating engaging educational videos on YouTube to share insights and foster a deeper understanding of computational concepts.</p>
             </div>
 
             <!-- Languages and Links -->
             <div class="lg:flex items-center justify-between p-4">
-              <ul class="flex gap-2">
+              <ul class="lg:flex gap-2">
                 <li class="border-2 border-white px-3 py-1">PYTHON</li>
                 <li class="border-2 border-white px-3 py-1">MANIM</li>
               </ul>
@@ -177,7 +178,7 @@
 
             <!-- Languages and Links -->
             <div class="lg:flex items-center justify-between p-4">
-              <ul class="flex gap-2">
+              <ul class="lg:flex gap-2">
                 <li class="border-2 border-white px-3 py-1">HTML</li>
                 <li class="border-2 border-white px-3 py-1">TAILWINDCSS</li>
                 <li class="border-2 border-white px-3 py-1">JAVASCRIPT</li>
@@ -201,7 +202,7 @@
 
             <!-- Languages and Links -->
             <div class="lg:flex items-center justify-between p-4">
-              <ul class="flex gap-2">
+              <ul class="lg:flex gap-2">
                 <li class="border-2 border-white px-3 py-1">Data Annotation</li>
               </ul>
               <a class="btn lg:mt-0 mt-2 bg-gray-700 text-white px-3 py-1 rounded" target="_blank"
@@ -224,7 +225,7 @@
 
             <!-- Languages and Links -->
             <div class="lg:flex items-center justify-between p-4">
-              <ul class="flex gap-2">
+              <ul class="lg:flex gap-2">
                 <li class="border-2 border-white px-3 py-1">C++</li>
               </ul>
             
@@ -236,7 +237,7 @@
 
     <!-- TimeLine -->
     <div class="grid grid-cols-1 bg-white">
-      <div class=" border-r-8 border-red-700 pr-20 mt-20 mb-20 mr-64">
+      <div class=" md:border-r-8 md:border-red-700 pr-20 mt-20 md:mb-20 md:mr-64">
         <ul id="timeline" class="timeline timeline-vertical pt-20 pb-20 bg-white">
           <!-- Timeline items -->
           <li>
