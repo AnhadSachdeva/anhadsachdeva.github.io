@@ -25,3 +25,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const button = document.getElementById('updates');
+
+    button.addEventListener('click', function() {
+        const projects = document.getElementById('timeline');
+        if(projects){
+            projects.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    });
+});
