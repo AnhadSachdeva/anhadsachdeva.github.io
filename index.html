@@ -1,318 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./root/output.css" rel="stylesheet">
-  <link rel="icon" type="image/png" href="./root/img/icon.png">
-  <title>Personal Portfolio</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Portfolio</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body id="body_top" class="overflow-x-hidden">
-
-  <!-- NavBar -->
-  <div id="navbar" class="navbar sticky z-10 top-0 bg-slate-700 text-white w-full py-4 transition-all duration-300">
-    <div class="navbar-start">
-      <a id="home" class="btn btn-ghost text-xl hover:scale-110 transition-transform duration-300 ease-in-ou">Anhad Sachdeva</a>
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
-    <div class="navbar-center hidden sm:flex">
-      <ul class="menu menu-horizontal font-bold px-1 font-mono text-lg ">
-        <li><a id="updates" class=" hover:underline hover:scale-110 transition-transform duration-300 ease-in-out">Updates</a></li>
-        <li><a id="projects" class=" hover:underline hover:scale-110 transition-transform duration-300 ease-in-out">Projects</a></li>
-      </ul>
-    </div>
-    <div class="navbar-end">
-      <ul class="menu menu-horizontal px-1">
-        <li><a target="_blank" href="https://www.linkedin.com/in/anhadsachdeva" class="hover:scale-110 transition-transform duration-300 ease-in-out"> 
-            <?xml version="1.0" ?>
-            <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg
-              width="24" height="24"
-              style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1"
-              viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-              xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <g id="g5891">
-                <path
-                  d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z"
-                  id="background" style="fill:#2867b2;" />
-                <g id="shapes">
-                  <rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667" />
-                  <path
-                    d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z"
-                    id="path13-0" style="fill:#fff;fill-rule:nonzero;" />
-                  <path
-                    d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z"
-                    id="path15" style="fill:#fff;fill-rule:nonzero;" />
-                </g>
-              </g>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://github.com/AnhadSachdeva" class="hover:scale-110 transition-transform duration-300 ease-in-ou">
-            <?xml version="1.0" ?>
-            <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg
-              width="24" height="24" enable-background="new 0 0 128 128" id="Social_Icons" version="1.1"
-              viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink">
-              <g id="_x31__stroke">
-                <g id="Github_1_">
-                  <rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128" />
-                  <path clip-rule="evenodd"
-                    d="M63.996,1.333C28.656,1.333,0,30.099,0,65.591    c0,28.384,18.336,52.467,43.772,60.965c3.2,0.59,4.368-1.394,4.368-3.096c0-1.526-0.056-5.566-0.088-10.927    c-17.804,3.883-21.56-8.614-21.56-8.614c-2.908-7.421-7.104-9.397-7.104-9.397c-5.812-3.988,0.44-3.907,0.44-3.907    c6.42,0.454,9.8,6.622,9.8,6.622c5.712,9.819,14.98,6.984,18.628,5.337c0.58-4.152,2.236-6.984,4.064-8.59    c-14.212-1.622-29.152-7.132-29.152-31.753c0-7.016,2.492-12.75,6.588-17.244c-0.66-1.626-2.856-8.156,0.624-17.003    c0,0,5.376-1.727,17.6,6.586c5.108-1.426,10.58-2.136,16.024-2.165c5.436,0.028,10.912,0.739,16.024,2.165    c12.216-8.313,17.58-6.586,17.58-6.586c3.492,8.847,1.296,15.377,0.636,17.003c4.104,4.494,6.58,10.228,6.58,17.244    c0,24.681-14.964,30.115-29.22,31.705c2.296,1.984,4.344,5.903,4.344,11.899c0,8.59-0.08,15.517-0.08,17.626    c0,1.719,1.152,3.719,4.4,3.088C109.68,118.034,128,93.967,128,65.591C128,30.099,99.344,1.333,63.996,1.333"
-                    fill="#3E75C3" fill-rule="evenodd" id="Github" />
-                </g>
-              </g>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="./root/cv/cv.pdf">
-            <h1 class="text-lg font-mono font-bold hover:underline hover:scale-110 transition-transform duration-300 ease-in-ou">CV</h3>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Main -->
-  <div class="sm:px-28 bg-neutral-200 ">
-      <!-- Welcoming Screen -->
-      <div class="bg-white  min-h-screen ">
-        <div class="text-left px-10 pt-20 md:mt-0 md:grid md:grid-cols-2 items-center justify-center ">
-          <div>
-            <H1 class="text-4xl lg:text-6xl pb-4 font-mono">Greetings!</H1>
-
-            <div class=" mockup-code p-4 rounded-lg shadow-lg ">
-
-              <code class="text-lg text-success">
-              I'm Anhad Sachdeva, currently in my second year at The University of Adelaide, studying Mathematics and Computer Science. Passionate about bringing ideas to life through projects, this portfolio is a glimpse into my journey of exploration and innovation.
-            </code>
-            </div>
-          </div>
-          <!-- <svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><style>.cls-1{fill:#fff}.cls-3{fill:#dfe1ea}.cls-5{fill:#ffcdbe}.cls-7{fill:#ffbeaa}.cls-8{fill:#f2f6fc}.cls-11{fill:#7e8596}</style></defs><g id="_54-Programmer" data-name="54-Programmer"><path class="cls-1" d="M53 9v14h-8l-6 4v-4h-6V9h20zM36 57h20v6H36z"/><path style="fill:#ffa426" d="M36 49h20v8H36z"/><path class="cls-3" d="M39 60h14v3H39z"/><path style="fill:#73c6b2" d="M33 1h20v8H33z"/><path class="cls-3" d="M36 12h14v8H36z"/><g id="_Group_" data-name="&lt;Group&gt;"><path class="cls-5" d="M26 28a2 2 0 0 1 0 4h-1v-4z"/><path d="M11 29v-6c0-6 5-6 5-6h5c7 0 7 8 7 8H17c0 3-6 4-6 4z" style="fill:#b46e5a"/><path class="cls-5" d="M11 29v3h-1a2 2 0 0 1 0-4h1zM15 38.33A6.592 6.592 0 0 1 13 37c-2-2-2-3-2-3v-5s6-1 6-4h8v9s0 1-2 3a6.592 6.592 0 0 1-2 1.33 8.459 8.459 0 0 1-3 .67 8.459 8.459 0 0 1-3-.67z"/><path class="cls-7" d="M21 41v1a3 3 0 0 1-6 0v-3.67a8.459 8.459 0 0 0 3 .67 8.459 8.459 0 0 0 3-.67z"/><path class="cls-8" d="M18 45a2.938 2.938 0 0 0 3-3l3 3s-2 4-6 4zM18 45v4c-4 0-6-4-6-4l3-3a2.938 2.938 0 0 0 3 3z"/><path d="M12 45s2 4 6 4 6-4 6-4l-3-3v-1h5s5 0 5 5v17H5V46c0-5 5-5 5-5h5v1z" style="fill:#bec3d2"/><path class="cls-7" d="M25 25h-8c0 3-6 4-6 4v.168A31.293 31.293 0 0 1 14.394 29C20.049 29 21.5 30.106 25 30.673V25z"/><path d="M11 28v1s6-1 6-4h-6z" style="fill:#915041"/><path class="cls-11" d="M10 41s-5 0-5 5v17h6V41zM26 41h-1v22h6V46c0-5-5-5-5-5z"/><path class="cls-1" d="M36 4h2v2h-2zM40 4h2v2h-2zM39 52h2v2h-2zM43 52h2v2h-2z"/><path d="M26 40h-4v-1.049a7.225 7.225 0 0 0 1.707-1.244C25.835 35.579 26 34.332 26 34v-1a3 3 0 0 0 0-6v-1h2a1 1 0 0 0 1-1c0-3.113-1.672-9-8-9h-5c-2.075 0-6 1.463-6 7v4a3 3 0 0 0 0 6v1c0 .332.165 1.579 2.293 3.707A7.221 7.221 0 0 0 14 38.951V40h-4a5.785 5.785 0 0 0-6 6v17a1 1 0 0 0 1 1h26a1 1 0 0 0 1-1V46a5.785 5.785 0 0 0-6-6zM9 30a1 1 0 0 1 1-1v2a1 1 0 0 1-1-1zm9 10a8.62 8.62 0 0 0 2-.3V42a1.883 1.883 0 0 1-2 2 1.883 1.883 0 0 1-2-2v-2.3a8.635 8.635 0 0 0 2 .3zm-3.523 3.937A3.633 3.633 0 0 0 17 45.9v1.988a6.473 6.473 0 0 1-3.736-2.734zM19 45.9a3.633 3.633 0 0 0 2.523-1.959l1.213 1.213A6.474 6.474 0 0 1 19 47.894zM27 30a1 1 0 0 1-1 1v-2a1 1 0 0 1 1 1zm-15-7c0-4.809 3.6-5 4-5h5c4.59 0 5.669 4.06 5.922 6H17a1 1 0 0 0-1 1c0 1.3-2.243 2.272-4 2.752zm0 10.995v-4.179c1.652-.385 5.07-1.456 5.843-3.816H24v7.919c0 .008-.145.808-1.711 2.374a5.581 5.581 0 0 1-1.681 1.115A7.471 7.471 0 0 1 18 38a7.452 7.452 0 0 1-2.6-.584 5.622 5.622 0 0 1-1.7-1.123 6.466 6.466 0 0 1-1.7-2.298zM30 62h-4V50h-2v12H12V50h-2v12H6V46a3.85 3.85 0 0 1 4-4h3.586l-2.293 2.293a1 1 0 0 0-.188 1.154c.086.172 2 3.9 5.9 4.473V59h2v-9.08c3.89-.57 5.809-4.3 5.9-4.473a1 1 0 0 0-.188-1.154L22.414 42H26c.163 0 4 .046 4 4zM41.707 18.293 39.414 16l2.293-2.293-1.414-1.414-3 3a1 1 0 0 0 0 1.414l3 3zM45.707 19.707l3-3a1 1 0 0 0 0-1.414l-3-3-1.414 1.414L46.586 16l-2.293 2.293z"/><path d="M38 27a1 1 0 0 0 1.555.832L45.3 24H53a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1H33a1 1 0 0 0-1 1v22a1 1 0 0 0 1 1h5zM52 2v6H34V2zM34 22V10h18v12h-7a1.006 1.006 0 0 0-.555.168L40 25.132V23a1 1 0 0 0-1-1zM59 36a.811.811 0 0 1-.71-.29c-.61-.743-.472-2.689-.31-3.516A1 1 0 0 0 57 31h-2v2h.865a5.866 5.866 0 0 0 .877 3.977 2.717 2.717 0 0 0 1.258.869v.308a2.717 2.717 0 0 0-1.258.869A5.866 5.866 0 0 0 55.865 43H55v2h2a1 1 0 0 0 .98-1.194c-.162-.827-.3-2.773.31-3.516A.811.811 0 0 1 59 40a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1zM47 37h2v2h-2zM43 37h2v2h-2zM51 37h2v2h-2zM41 31h-2a1 1 0 0 0-.98 1.194c.162.827.3 2.773-.31 3.516A.811.811 0 0 1 37 36a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 .811.811 0 0 1 .71.29c.61.743.472 2.689.31 3.516A1 1 0 0 0 39 45h2v-2h-.865a5.866 5.866 0 0 0-.877-3.977A2.717 2.717 0 0 0 38 38.154v-.308a2.717 2.717 0 0 0 1.258-.869A5.866 5.866 0 0 0 40.135 33H41zM56 48H36a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1V49a1 1 0 0 0-1-1zm-1 2v6H37v-6zM37 62v-4h18v4z"/></g></g></svg> -->
-          <!-- <svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-            <g id="Layer_3" data-name="Layer 3">
-              <path
-                d="M22,6H10a5,5,0,0,0-5,5V21a5,5,0,0,0,5,5H22a5,5,0,0,0,5-5V11A5,5,0,0,0,22,6Zm-8.29,9.71-2,2a1,1,0,0,1-1.42,0,1,1,0,0,1,0-1.42L11.59,15l-1.3-1.29a1,1,0,0,1,1.42-1.42l2,2A1,1,0,0,1,13.71,15.71ZM18,18H16a1,1,0,0,1,0-2h2a1,1,0,0,1,0,2Z" />
-            </g>
-          </svg> -->
-          <img class="hidden md:block" src="./root/img/code.svg" alt="">
-
-          <!-- Moved the button here and added margin top -->
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-        <div class="flex justify-center">
-          <button id="find_out_more" class="btn bg-slate-700 text-white mt-4">Find Out More!</button>
-        </div>
-      </div>
-
-      <!-- Projects -->
-      <div id="projects_layout" class="bg-white pt-12 font-mono text-white">
-    
-        <h1  class="pt-10 font-bold text-gray-800 flex justify-center text-4xl lg:text-6xl pb-4">
-          Projects
-        </h1>
-
-        <!-- List Projects -->
-        <div class="bg-slate-700 p-20 pt-14 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <!-- Project 1 -->
-          <div class="border-2 border-r-4 border-b-4 rounded m-4">
-            <!-- Image -->
-            <div>
-              <img class="h-96 w-full" src="./root/img/visual_algo.png" alt="VisualAlgo">
-            </div>
-            <div class="border-t-2">
-              <!-- Text -->
-              <div class="m-4 ">
-                <h2 class="text-xl font-bold mb-2"><a class="hover:underline" target="_blank" href="https://github.com/AnhadSachdeva/VisualAlgo">VisualAlgo</a></h2>
-                <p class="text-gray-200">I've been developing an interactive visualizer using Manim to dynamically animate the inner workings of algorithms and data structures. This project focuses on creating engaging educational videos on YouTube to share insights and foster a deeper understanding of computational concepts.</p>
-              </div>
-
-              <!-- Languages and Links -->
-              <div class="lg:flex items-center justify-between p-4">
-                <ul class="lg:flex gap-2">
-                  <li class="border-2 border-white px-3 py-1">PYTHON</li>
-                  <li class="border-2 border-white px-3 py-1">MANIM</li>
-                </ul>
-                <a class="btn lg:mt-0 mt-2 bg-gray-700 text-white px-3 py-1 rounded" target="_blank"
-                  href="https://www.youtube.com/watch?v=qmOqOyz63VU&list=PLwJIaHZ1LgAQIZnKj0_jHG-sQl0At2n77&pp=gAQBiAQB">Youtube</a>
-              </div>
-            </div>
-          </div>
-          <!-- Project 2 -->
-          <div class="border-2 border-r-4 border-b-4 rounded m-4">
-            <!-- Image -->
-            <div>
-              <img class="h-96" src="./root/img/personal_portfolio.png" alt="personal_portfolio">
-            </div>
-            <div class="border-t-2">
-              <!-- Text -->
-              <div class="m-4">
-                <h2 class="text-xl font-bold mb-2"><a class="hover:underline" target="_blank" href="https://github.com/AnhadSachdeva/anhadsachdeva.github.io/tree/gh-pages">Personal Portfolio</a></h2>
-                <p class="text-gray-200"> Explore how I bring creativity and innovation to life through my diverse range of projects and experiences.</p>
-              </div>
-
-              <!-- Languages and Links -->
-              <div class="lg:flex items-center justify-between p-4">
-                <ul class="lg:flex gap-2">
-                  <li class="border-2 border-white px-3 py-1">HTML</li>
-                  <li class="border-2 border-white px-3 py-1">TAILWINDCSS</li>
-                  <li class="border-2 border-white px-3 py-1">JAVASCRIPT</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- Project 3 -->
-          <div class="border-2 border-r-4 border-b-4 rounded m-4">
-            <!-- Image -->
-            <div>
-              <img class="h-96 w-full" src="./root/img/paper.png" alt="personal_portfolio">
-
-            </div>
-            <div class="border-t-2">
-              <!-- Text -->
-              <div class="m-4">
-                <h2 class="text-xl font-bold mb-2">Assisted with Data Annotation and Quality Assurance for The Manga Whisper</h2>
-                <p class="text-gray-200">I played a pivotal role in the data annotation and quality assurance for a significant research project focusing on manga character annotation using the List Annotator (LISA) tool. This project aimed to automate the transcription process for comics, enhancing accessibility and understanding of visual storytelling.</p>
-              </div>
-
-              <!-- Languages and Links -->
-              <div class="lg:flex items-center justify-between p-4">
-                <ul class="lg:flex gap-2">
-                  <li class="border-2 border-white px-3 py-1">Data Annotation</li>
-                </ul>
-                <a class="btn lg:mt-0 mt-2 bg-gray-700 text-white px-3 py-1 rounded" target="_blank"
-                https://arxiv.org/pdf/2401.10224">Visit Paper</a>
-              </div>
-            </div>
-          </div>
-          <!-- Project 4 -->
-          <div class="border-2 border-r-4 border-b-4 rounded m-4">
-            <!-- Image -->
-            <div>
-              <img class="rounded h-96 w-full" src="./root/img/terminal_chess.png" alt="Terminal_Chess">
-            </div>
-            <div class="border-t-2">
-              <!-- Text -->
-              <div class="m-4">
-                <h2 class="text-xl font-bold mb-2"><a class="hover:underline" target="_blank" href="https://github.com/AnhadSachdeva/Terminal-Chess-Game-2P">Terminal Chess</a></h2>
-                <p class="text-gray-200">I've created a classic chess game playable in the terminal using C++. It includes essential mechanics such as promotion, stalemate, castling, and accurate check/checkmate detection.</p>
-              </div>
-
-              <!-- Languages and Links -->
-              <div class="lg:flex items-center justify-between p-4">
-                <ul class="lg:flex gap-2">
-                  <li class="border-2 border-white px-3 py-1">C++</li>
-                </ul>
-              
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- TimeLine -->
-      <div class="grid grid-cols-1 bg-white">
-        <div class=" md:border-r-8 md:border-red-700 pr-20 mt-20 md:mb-20 md:mr-64">
-          <ul id="timeline" class="timeline timeline-vertical pt-20 pb-20 bg-white">
-            <!-- Timeline items -->
+        <ul id="menu" class="shadow">
             <li>
-              <div class="timeline-start">Jan 2024</div>
-              <div class="timeline-middle">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
-                  <path fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                    clip-rule="evenodd" />
-                </svg>
-              </div>
-              <div class="timeline-end timeline-box">Our Team placed 3rd out of 44 teams in the University Wide
-                Programming Competition.</div>
-              <hr />
+                <a href="#about">About</a>
             </li>
             <li>
-              <hr />
-              <div class="timeline-start">Feb 2023</div>
-              <div class="timeline-middle">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
-                  <path fill-rule="evenodd"
-                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                    clip-rule="evenodd" />
-                </svg>
-              </div>
-              <div class="timeline-end timeline-box ">Enrolled in Mathematical and Computer Science</div>
+                <a href="#experience">Experience</a>
             </li>
-          </ul>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+            <h1>Anhad Sachdeva</h1>
+            <h2>Computer Science Student</h2>
+            <a href="static/cv.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
-        <!-- red line -->
-        <!-- <div class="bg-white pt-20 pb-20">
-      
-          <svg id="timelineLine" class="pl-20 lg:ml-52" height="auto" width="auto" xmlns="http://www.w3.org/2000/svg">
-            <line x1="0" y1="0" x2="0" y2="200" style="stroke:red;stroke-width:14" />
-          </svg>
-        </div> -->
-      </div>
+        <!-- End #lead-content -->
 
-  </div>
+        <div id="lead-overlay"></div>
 
-  <!-- Footer -->
-  <!-- <hr class=" border-gray-700"> -->
-  <footer class="footer footer-center bg-slate-700 text-white p-10">
-    <!-- <nav class="grid grid-flow-col gap-4">
-      <a class="link link-hover">About us</a>
-      <a class="link link-hover">Contact</a>
-      <a class="link link-hover">Jobs</a>
-      <a class="link link-hover">Press kit</a>
-    </nav> -->
-    <nav>
-      <div class="grid grid-flow-col gap-4">
-        <a href="www.linkedin.com/in/anhadsachdeva" class="hover:scale-110 transition-transform duration-300 ease-in-ou">
-          <?xml version="1.0" ?>
-          <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg
-            width="24" height="24"
-            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1"
-            viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-            xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g id="g5891">
-              <path
-                d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z"
-                id="background" style="fill:#2867b2;" />
-              <g id="shapes">
-                <rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667" />
-                <path
-                  d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z"
-                  id="path13-0" style="fill:#fff;fill-rule:nonzero;" />
-                <path
-                  d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z"
-                  id="path15" style="fill:#fff;fill-rule:nonzero;" />
-              </g>
-            </g>
-          </svg>
-        </a>
-        <a href="https://github.com/AnhadSachdeva" class="hover:scale-110 transition-transform duration-300 ease-in-ou">
-          <?xml version="1.0" ?>
-          <!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg
-            width="24" height="24" enable-background="new 0 0 128 128" id="Social_Icons" version="1.1"
-            viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink">
-            <g id="_x31__stroke">
-              <g id="Github_1_">
-                <rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128" />
-                <path clip-rule="evenodd"
-                  d="M63.996,1.333C28.656,1.333,0,30.099,0,65.591    c0,28.384,18.336,52.467,43.772,60.965c3.2,0.59,4.368-1.394,4.368-3.096c0-1.526-0.056-5.566-0.088-10.927    c-17.804,3.883-21.56-8.614-21.56-8.614c-2.908-7.421-7.104-9.397-7.104-9.397c-5.812-3.988,0.44-3.907,0.44-3.907    c6.42,0.454,9.8,6.622,9.8,6.622c5.712,9.819,14.98,6.984,18.628,5.337c0.58-4.152,2.236-6.984,4.064-8.59    c-14.212-1.622-29.152-7.132-29.152-31.753c0-7.016,2.492-12.75,6.588-17.244c-0.66-1.626-2.856-8.156,0.624-17.003    c0,0,5.376-1.727,17.6,6.586c5.108-1.426,10.58-2.136,16.024-2.165c5.436,0.028,10.912,0.739,16.024,2.165    c12.216-8.313,17.58-6.586,17.58-6.586c3.492,8.847,1.296,15.377,0.636,17.003c4.104,4.494,6.58,10.228,6.58,17.244    c0,24.681-14.964,30.115-29.22,31.705c2.296,1.984,4.344,5.903,4.344,11.899c0,8.59-0.08,15.517-0.08,17.626    c0,1.719,1.152,3.719,4.4,3.088C109.68,118.034,128,93.967,128,65.591C128,30.099,99.344,1.333,63.996,1.333"
-                  fill="#3E75C3" fill-rule="evenodd" id="Github" />
-              </g>
-            </g>
-          </svg>
-        </a>
-      </div>
-    </nav>
-    <aside>
-      <p class="">Copyright © Anhad Sachdeva</p>
-    </aside>
-  </footer>
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="heading">About Me</h2>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        I'm Anhad Sachdeva, currently in my third year at The University of Adelaide, studying Mathematics and Computer Science. Passionate about bringing ideas to life through projects, this portfolio is a glimpse into my journey of exploration and innovation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about -->
 
-  <script src="./root/index.js"></script>
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="Nov 2024 – Jan 2025">
+                <h3>Software Engineer Intern</h3>
+                <h4>Stealth Startup</h4>
+                <p>
+                    Designed and implemented scalable SaaS solutions using Django, ensuring seamless user experiences. Integrated secure payment system using Lemon Squeezy, tested processing over 500 monthly transactions with 99% reliability. Built an access token authentication system for API call security and developed callbacks to manage real-time payment events.
+                </p>
+            </div>
+
+            <div data-date="Aug 2023 – Jan 2024">
+                <h3>Research Assistant</h3>
+                <p>
+                    Ensured data annotation quality for The Manga Whisperer: Automatically Generating Transcriptions for Comics. Stress-tested the LISA Tool and implemented logical improvements using JavaScript. Streamlined data processes, enhancing the accuracy and efficiency of computer vision research.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>The University of Adelaide, Australia</h3>
+            <span class="education-date">Feb 2023 – Nov 2026</span>
+            <h4>Bachelor of Mathematical and Computer Sciences <br> Honours of Computer Science</h4>
+            <ul>
+                <li>Relevant Course Work: Algorithm & Data Structure, Distributed Systems, Computer Systems, System Programming, Object Oriented Programming, Algorithm & Data Structure Analysis</li>
+                <li>Our Team placed 3rd out of 44 teams in the University-Wide Programming Competition</li>
+                <li>Served as a 2024 University Open Day Representative</li>
+            </ul>
+        </div>
+        
+    </div>
+    <!-- End #education -->
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="row">
+                <div class="project no-image shadow-large">
+                    <div class="project-info full-width">
+                        <h3>Real Time Chat Application | Django Redis (In Progess)</h3>
+                        <p>
+                            Currently developing a real-time chat application using django and redis, allowing users to send and receive messages in real-time. Implementing features such as user authentication and group chat functionality.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project no-image shadow-large">
+                    <div class="project-info full-width">
+                        <h3>Redis-Inspired In-Memory Key-Value Store | C++</h3>
+                        <p>
+                            Built a scalable, high-performance in-memory key-value store with Redis-like functionality (SET, GET, DEL). Designed a TCP-based client-server architecture using non-blocking I/O and implemented custom hashtables, AVL trees, and heaps for efficient storage.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project no-image shadow-large">
+                    <div class="project-info full-width">
+                        <h3>Terminal Chess | C++</h3>
+                        <p>
+                            Developed a console-based chess game supporting mechanics like promotion, stalemate, castling, and check/checkmate detection. Engineered algorithms for move validation, game state management, and piece movement.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Languages: C++, Python, HTML</li>
+            <li>Frameworks: Django, Flask-RESTful</li>
+            <li>Tools & Technologies: PyTest, Git, Redis</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; <span id="current-year">2025</span> Anhad Sachdeva
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="col-sm-5 social">
+                    <ul>
+                        <li>
+                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
 </body>
 
 </html>
